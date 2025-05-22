@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仓库管理系统 - 控制台</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <div class="logo">
+                <h2>仓库管理系统</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" data-page="dashboard" class="active">控制台</a></li>
+                <li><a href="#" data-page="products">商品管理</a></li>
+                <li><a href="#" data-page="categories">分类管理</a></li>
+                <li><a href="#" data-page="stock">库存管理</a></li>
+                <li><a href="#" data-page="users">用户管理</a></li>
+            </ul>
+            <div class="user-info">
+                <span id="currentUser"></span>
+                <button id="logoutBtn">退出登录</button>
+            </div>
+        </nav>
+        <main class="main-content">
+            <div id="content">
+                <!-- 内容将通过JavaScript动态加载 -->
+            </div>
+        </main>
+    </div>
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html> 
